@@ -78,6 +78,10 @@ html {
    clear: both;
 }
 
+.container.narrow {
+     max-width: 56rem;
+ }
+
  @media (min-width: 640px) {
      
      html { 
