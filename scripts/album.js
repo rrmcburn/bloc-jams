@@ -81,19 +81,21 @@ var setCurrentAlbum = function(album) {
  };
 
 var findParentByClassName = function(element, targetClass) {
+ if (element.parentNode === null) {
+    console.log("No Parent Found");
+  } else {
+     var currentParent = element;
 
-        if (element.parentNode === null) {
-          console.log("No Parent Found");
-        }
-  else if (targetClass.parentNode === null) {
-    console.log("No parent found with that class name");
-} else if (element) {
-        var currentParent = element.parentElement;
-        while (currentParent.className != targetClass && currentParent.className !== null) {
-            currentParent = currentParent.parentElement;
-        }
-        return currentParent;
-    }
+     do {
+       currentParent = currentParent.parentElement;
+       if(currentParent.className == targetClass) {
+         return currentParent;
+       }
+     } while(currentParent.parentNode !== null);
+
+
+     console.log("No parent found with that class name");
+   }
 };
 
 var getSongItem = function(element) {
