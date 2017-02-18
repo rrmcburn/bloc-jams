@@ -52,6 +52,24 @@ body.album {
      width: 5%;
      min-width: 30px;
  }
+
+/*
+.song-item-number:hover {
+    font-family: ionicons; 
+    text-align: center;
+     font-size: 14px;
+     background-color: white;
+     color: rgb(210, 40, 123);
+     border-radius: 50% 50%;
+     display: inline-block;
+     width: 28px;
+     height: 28px;
+     padding-top: 15%;
+     padding-left: 2%;
+     margin-top: 40%;
+ }
+*/
+
  
  .song-item-title {
      width: 85%;
@@ -71,9 +89,14 @@ body.album {
      width: 28px;
      height: 28px;
      padding-top: 15%;
-     padding-left: 2%; 
+     padding-left: 2%;
+     margin-top: 40%;
     
  }
+
+.pointer-cursor {
+    cursor: pointer;
+}
  
  .album-song-button:hover {
      cursor: pointer;
